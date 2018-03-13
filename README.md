@@ -24,8 +24,6 @@ DELETE		  | Deletes a customer
    
    *The resource for getting the customer record by first name for retrieval and update is defined in RAML as part of this API. The retrieve record can be cached for lowering the latency 
     with minimal cache expiration time . The resource will not be using any payload instead as per REST principle uri param with first name of the customer is used as the key.
-	
-	Also the since the API is meant for a mobile application the resource has to be secured with OAuth 2.0 implicit grant type . The current implementation submitted does not cover this security
-	set up in proxy as this is ideally part of API manager policy*
+    Also the since the API is meant for a mobile application the resource has to be secured with OAuth 2.0 implicit grant type . The current implementation submitted does not cover this security set up in proxy as this is ideally part of API manager policy*
 	
 3. Simple extension of the API to support future resources such as orders and products
