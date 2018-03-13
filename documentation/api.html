@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>exp-customer-api · Anypoint Studio Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="assets/bootstrap.css" rel="stylesheet">
+    <link href="assets/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/docs.css" rel="stylesheet">
+    <link href="assets/prettify.css" rel="stylesheet">
+    <link href="assets/scroller.css" rel="stylesheet">
+
+  </head>
+
+  <body data-twttr-rendered="true" data-spy="scroll" data-target=".bs-docs-sidebar"><iframe style="display: none;" id="rufous-sandbox" name="uid13460061790411"></iframe>
+
+    <!-- Navbar
+    ================================================== -->
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand pull-left" href="#">exp-customer-api</a>
+          <p class="navbar-text pull-right">
+              <a href="http://www.mulesoft.com" class="navbar-link">
+                <img src="./assets/images/mulesoft-logo-final.png" alt="MuleSoft" id="mulesoftlogo">
+              </a>
+          </p>
+          <div class="scroller scroller-left"><img src="./assets/icons/glyphicons_chevron-left.png" alt="scrollLeft"></div>
+          <div class="scroller scroller-right"><img src="./assets/icons/glyphicons_chevron-right.png" alt="scrollRight"></div>
+          <div class="wrapper">
+            <ul class="nav nav-tabs list" id="myTab">
+                                                                    <li><a href="./index.html">global-config</a></li>
+                                                                                                            <li class="active"><a href="./api.html">api</a></li>
+                                                                </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+  <header class="jumbotron subhead" id="overview">
+    <div class="container">
+      <h1>exp-customer-api</h1>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <!-- Docs nav
+    ================================================== -->
+    <div class="row">
+      <div class="span3 bs-docs-sidebar">
+        <ul class="nav nav-list bs-docs-sidenav affix">
+          <li class="nav-header">Flows</li>
+                      <li data-toggle="collapse" data-target="#_api_mainNav"><a href="#_api_main"><i class="icon-chevron-right"></i> api-main</a>
+            </li>
+            <div id="_api_mainNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                                                                                                    </ul>
+              </div>
+            </div>
+                      <li data-toggle="collapse" data-target="#_api_consoleNav"><a href="#_api_console"><i class="icon-chevron-right"></i> api-console</a>
+            </li>
+            <div id="_api_consoleNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                                                              </ul>
+              </div>
+            </div>
+                      <li data-toggle="collapse" data-target="#_put_customers_customerId_application_json_api_configNav"><a href="#_put_customers_customerId_application_json_api_config"><i class="icon-chevron-right"></i> put:/customers/{customerId}:application/json:api-config</a>
+            </li>
+            <div id="_put_customers_customerId_application_json_api_configNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                                                              </ul>
+              </div>
+            </div>
+                      <li data-toggle="collapse" data-target="#_delete_customers_customerId_api_configNav"><a href="#_delete_customers_customerId_api_config"><i class="icon-chevron-right"></i> delete:/customers/{customerId}:api-config</a>
+            </li>
+            <div id="_delete_customers_customerId_api_configNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                                                              </ul>
+              </div>
+            </div>
+                      <li data-toggle="collapse" data-target="#_get_orders_api_configNav"><a href="#_get_orders_api_config"><i class="icon-chevron-right"></i> get:/orders:api-config</a>
+            </li>
+            <div id="_get_orders_api_configNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                        </ul>
+              </div>
+            </div>
+                      <li data-toggle="collapse" data-target="#_get_products_api_configNav"><a href="#_get_products_api_config"><i class="icon-chevron-right"></i> get:/products:api-config</a>
+            </li>
+            <div id="_get_products_api_configNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                        </ul>
+              </div>
+            </div>
+                      <li data-toggle="collapse" data-target="#_get_customers_customerId_api_configNav"><a href="#_get_customers_customerId_api_config"><i class="icon-chevron-right"></i> get:/customers/{customerId}:api-config</a>
+            </li>
+            <div id="_get_customers_customerId_api_configNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                                                              </ul>
+              </div>
+            </div>
+                      <li data-toggle="collapse" data-target="#_get_customers_api_configNav"><a href="#_get_customers_api_config"><i class="icon-chevron-right"></i> get:/customers:api-config</a>
+            </li>
+            <div id="_get_customers_api_configNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                                                              </ul>
+              </div>
+            </div>
+                      <li data-toggle="collapse" data-target="#_post_customers_application_json_api_configNav"><a href="#_post_customers_application_json_api_config"><i class="icon-chevron-right"></i> post:/customers:application/json:api-config</a>
+            </li>
+            <div id="_post_customers_application_json_api_configNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                                                                                                    </ul>
+              </div>
+            </div>
+                  </ul>
+      </div>
+      <div class="span9">
+
+        <!-- Elements and their descriptions
+        ================================================== -->
+        <div style="max-height: 640px;width:100%;overflow:auto;">
+                      <img src="img/api.png" usemap="#mFlowMap" alt="Mule Configuration Image">
+            <map name="mFlowMap">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </map>
+                  </div>
+        <!--Mule configuration xml code-->
+        <div class="accordion-heading">
+          <a class="accordion-toggle" data-toggle="collapse" href="#collapseMuleConfiguration">
+            Show Mule Configuration XML code...
+          </a>
+        </div>
+        <div id="collapseMuleConfiguration" class="accordion-body collapse" style="height: 0px;">
+          <div class="accordion-inner">
+              <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;mule xmlns="http://www.mulesoft.org/schema/mule/core" version="EE-3.8.5"&gt;
+    &lt;http:request-config xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" name="HTTP_Request_Configuration" host="${http.host}" port="${http.port}" basePath="${http.base.path}" responseTimeout="${http.responseTimeout}" doc:name="HTTP Request Configuration"&gt;    &lt;/http:request-config&gt;
+    &lt;flow xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" name="api-main" doc:description="This the main entry point for the API proxy. This API holds customer related resources which includes create , update , get , delete and get ALL methods."&gt;
+        &lt;http:listener xmlns:http="http://www.mulesoft.org/schema/mule/http" config-ref="api-httpListenerConfig" path="/api/*" doc:name="HTTP"&gt; &lt;/http:listener&gt;
+        &lt;apikit:router xmlns:apikit="http://www.mulesoft.org/schema/mule/apikit" config-ref="api-config" doc:name="APIkit Router"&gt;  &lt;/apikit:router&gt;
+        &lt;exception-strategy ref="api-apiKitGlobalExceptionMapping" doc:name="Reference Exception Strategy"/&gt;
+    &lt;/flow&gt;
+    &lt;flow name="api-console"&gt;
+        &lt;http:listener xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" config-ref="api-httpListenerConfig" path="/console/*" doc:name="HTTP"&gt;   &lt;/http:listener&gt;
+        &lt;apikit:console xmlns:apikit="http://www.mulesoft.org/schema/mule/apikit" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" config-ref="api-config" doc:name="APIkit Console"&gt;  &lt;/apikit:console&gt;
+    &lt;/flow&gt;
+    &lt;flow xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" name="put:/customers/{customerId}:application/json:api-config" doc:description="This resource wll invoke customer backend service for updating the record"&gt;
+        &lt;http:request xmlns:http="http://www.mulesoft.org/schema/mule/http" config-ref="HTTP_Request_Configuration" path="/#[message.inboundProperties.'http.uri.params'.customerId]" method="PUT" doc:name="HTTP_UpdateCustomerRecordByName"&gt;  &lt;/http:request&gt;
+        &lt;set-payload value="#[NullPayload.getInstance()]" doc:name="Set Payload"/&gt;
+    &lt;/flow&gt;
+    &lt;flow xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" name="delete:/customers/{customerId}:api-config" doc:description="This resource wll invoke customer backend service for deleting the record"&gt;
+        &lt;http:request xmlns:http="http://www.mulesoft.org/schema/mule/http" config-ref="HTTP_Request_Configuration" path="/#[message.inboundProperties.'http.uri.params'.customerId]" method="DELETE" doc:name="HTTP_DeleteCustomerRecordByName"&gt;   &lt;/http:request&gt;
+        &lt;set-payload value="#[NullPayload.getInstance()]" doc:name="Set Payload"/&gt;
+    &lt;/flow&gt;
+    &lt;flow xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" name="get:/orders:api-config" doc:description="Implementation is in progress &amp;lt;&amp;lt;TBD&amp;gt;&amp;gt;"&gt;
+        &lt;set-payload value="#[NullPayload.getInstance()]" doc:name="Set Payload"/&gt;
+    &lt;/flow&gt;
+    &lt;flow xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" name="get:/products:api-config" doc:description="Implmentation is in progress &amp;lt;&amp;lt;TBD&amp;gt;&amp;gt;"&gt;
+        &lt;set-payload value="#[NullPayload.getInstance()]" doc:name="Set Payload"/&gt;
+    &lt;/flow&gt;
+    &lt;flow xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" name="get:/customers/{customerId}:api-config" doc:description="This resource wll invoke customer backend service for getting customer records  by first name"&gt;
+        &lt;http:request xmlns:http="http://www.mulesoft.org/schema/mule/http" config-ref="HTTP_Request_Configuration" path="/#[message.inboundProperties.'http.uri.params'.customerId]" method="GET" doc:name="HTTP_GetCustomerRecordByName"&gt; &lt;/http:request&gt;
+        &lt;set-payload value="#[payload]" mimeType="application/json" doc:name="Set Payload"/&gt;
+    &lt;/flow&gt;
+    &lt;flow xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" name="get:/customers:api-config" doc:description="This resource wll invoke customer backend service for getting all customer records"&gt;
+        &lt;http:request xmlns:http="http://www.mulesoft.org/schema/mule/http" config-ref="HTTP_Request_Configuration" path="/" method="GET" doc:name="HTTP_GetAllCustomerRecords"&gt;    &lt;/http:request&gt;
+        &lt;set-payload value="#[payload]" mimeType="application/json" doc:name="Set Payload"/&gt;
+    &lt;/flow&gt;
+    &lt;flow xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" name="post:/customers:application/json:api-config" doc:description="This resource wll invoke customer backend service for inserting a new record"&gt;
+        &lt;http:request xmlns:http="http://www.mulesoft.org/schema/mule/http" config-ref="HTTP_Request_Configuration" path="/" method="POST" doc:name="HTTP_InsertCustomerRecord"&gt;    &lt;/http:request&gt;
+        &lt;set-property propertyName="http.status" value="201" doc:name="Set_HttpStatus"/&gt;
+        &lt;set-payload value="#[payload]" mimeType="application/json" doc:name="Set Payload"/&gt;
+    &lt;/flow&gt;
+    &lt;apikit:mapping-exception-strategy xmlns:apikit="http://www.mulesoft.org/schema/mule/apikit" name="api-apiKitGlobalExceptionMapping"&gt;
+        &lt;apikit:mapping statusCode="404"&gt;
+            &lt;apikit:exception value="org.mule.module.apikit.exception.NotFoundException"/&gt;
+            &lt;set-property xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" propertyName="Content-Type" value="application/json" doc:name="Property"&gt;   &lt;/set-property&gt;
+            &lt;set-payload xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" value="{ &amp;quot;message&amp;quot;: &amp;quot;Resource not found&amp;quot; }" doc:name="Set Payload"&gt;  &lt;/set-payload&gt;
+        &lt;/apikit:mapping&gt;
+        &lt;apikit:mapping statusCode="405"&gt;
+            &lt;apikit:exception value="org.mule.module.apikit.exception.MethodNotAllowedException"/&gt;
+            &lt;set-property xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" propertyName="Content-Type" value="application/json" doc:name="Property"&gt;   &lt;/set-property&gt;
+            &lt;set-payload xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" value="{ &amp;quot;message&amp;quot;: &amp;quot;Method not allowed&amp;quot; }" doc:name="Set Payload"&gt;  &lt;/set-payload&gt;
+        &lt;/apikit:mapping&gt;
+        &lt;apikit:mapping statusCode="415"&gt;
+            &lt;apikit:exception value="org.mule.module.apikit.exception.UnsupportedMediaTypeException"/&gt;
+            &lt;set-property xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" propertyName="Content-Type" value="application/json" doc:name="Property"&gt;   &lt;/set-property&gt;
+            &lt;set-payload xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" value="{ &amp;quot;message&amp;quot;: &amp;quot;Unsupported media type&amp;quot; }" doc:name="Set Payload"&gt;  &lt;/set-payload&gt;
+        &lt;/apikit:mapping&gt;
+        &lt;apikit:mapping statusCode="406"&gt;
+            &lt;apikit:exception value="org.mule.module.apikit.exception.NotAcceptableException"/&gt;
+            &lt;set-property xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" propertyName="Content-Type" value="application/json" doc:name="Property"&gt;   &lt;/set-property&gt;
+            &lt;set-payload xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" value="{ &amp;quot;message&amp;quot;: &amp;quot;Not acceptable&amp;quot; }" doc:name="Set Payload"&gt;  &lt;/set-payload&gt;
+        &lt;/apikit:mapping&gt;
+        &lt;apikit:mapping statusCode="400"&gt;
+            &lt;apikit:exception value="org.mule.module.apikit.exception.BadRequestException"/&gt;
+            &lt;set-property xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" propertyName="Content-Type" value="application/json" doc:name="Property"&gt;   &lt;/set-property&gt;
+            &lt;set-payload xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" value="{ &amp;quot;message&amp;quot;: &amp;quot;Bad request&amp;quot; }" doc:name="Set Payload"&gt; &lt;/set-payload&gt;
+        &lt;/apikit:mapping&gt;
+    &lt;/apikit:mapping-exception-strategy&gt;
+&lt;/mule&gt;
+</code></pre>
+
+          </div>
+        </div>
+
+                  <section id="_api_main">
+            <div class="page-header">
+                <h1>api-main <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/api_main.png" usemap="#flowMapapi_main" alt="api_main image">
+                <map name="flowMapapi_main">
+                                                                                                                                                    </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_api_mainxml_code">
+                  Show configuration XML code of the flow api-main...
+                </a>
+              </div>
+              <div id="_api_mainxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="api-main" doc:description="This the main entry point for the API proxy. This API holds customer related resources which includes create , update , get , delete and get ALL methods."&gt;
+    &lt;http:listener config-ref="api-httpListenerConfig" path="/api/*" doc:name="HTTP"&gt;   &lt;/http:listener&gt;
+    &lt;apikit:router config-ref="api-config" doc:name="APIkit Router"&gt;    &lt;/apikit:router&gt;
+    &lt;exception-strategy ref="api-apiKitGlobalExceptionMapping" doc:name="Reference Exception Strategy"/&gt;
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p><p>This the main entry point for the API proxy.
+This API holds customer related resources which includes create , update , get , delete and get ALL methods.</p>
+</p>
+            </div>
+                                                                                                    </section>
+                  <section id="_api_console">
+            <div class="page-header">
+                <h1>api-console <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/api_console.png" usemap="#flowMapapi_console" alt="api_console image">
+                <map name="flowMapapi_console">
+                                                                                                              </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_api_consolexml_code">
+                  Show configuration XML code of the flow api-console...
+                </a>
+              </div>
+              <div id="_api_consolexml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="api-console"&gt;
+    &lt;http:listener config-ref="api-httpListenerConfig" path="/console/*" doc:name="HTTP"&gt;   &lt;/http:listener&gt;
+    &lt;apikit:console config-ref="api-config" doc:name="APIkit Console"&gt;  &lt;/apikit:console&gt;
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p></p>
+            </div>
+                                                                          </section>
+                  <section id="_put_customers_customerId_application_json_api_config">
+            <div class="page-header">
+                <h1>put:/customers/{customerId}:application/json:api-config <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/put_customers_customerId_application_json_api_config.png" usemap="#flowMapput_customers_customerId_application_json_api_config" alt="put_customers_customerId_application_json_api_config image">
+                <map name="flowMapput_customers_customerId_application_json_api_config">
+                                                                                                              </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_put_customers_customerId_application_json_api_configxml_code">
+                  Show configuration XML code of the flow put:/customers/{customerId}:application/json:api-config...
+                </a>
+              </div>
+              <div id="_put_customers_customerId_application_json_api_configxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="put:/customers/{customerId}:application/json:api-config" doc:description="This resource wll invoke customer backend service for updating the record"&gt;
+    &lt;http:request config-ref="HTTP_Request_Configuration" path="/#[message.inboundProperties.'http.uri.params'.customerId]" method="PUT" doc:name="HTTP_UpdateCustomerRecordByName"&gt;    &lt;/http:request&gt;
+    &lt;set-payload value="#[NullPayload.getInstance()]" doc:name="Set Payload"/&gt;
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p><p>This resource wll invoke customer backend service for updating the record</p>
+</p>
+            </div>
+                                                                          </section>
+                  <section id="_delete_customers_customerId_api_config">
+            <div class="page-header">
+                <h1>delete:/customers/{customerId}:api-config <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/delete_customers_customerId_api_config.png" usemap="#flowMapdelete_customers_customerId_api_config" alt="delete_customers_customerId_api_config image">
+                <map name="flowMapdelete_customers_customerId_api_config">
+                                                                                                              </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_delete_customers_customerId_api_configxml_code">
+                  Show configuration XML code of the flow delete:/customers/{customerId}:api-config...
+                </a>
+              </div>
+              <div id="_delete_customers_customerId_api_configxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="delete:/customers/{customerId}:api-config" doc:description="This resource wll invoke customer backend service for deleting the record"&gt;
+    &lt;http:request config-ref="HTTP_Request_Configuration" path="/#[message.inboundProperties.'http.uri.params'.customerId]" method="DELETE" doc:name="HTTP_DeleteCustomerRecordByName"&gt; &lt;/http:request&gt;
+    &lt;set-payload value="#[NullPayload.getInstance()]" doc:name="Set Payload"/&gt;
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p><p>This resource wll invoke customer backend service for deleting the record</p>
+</p>
+            </div>
+                                                                          </section>
+                  <section id="_get_orders_api_config">
+            <div class="page-header">
+                <h1>get:/orders:api-config <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/get_orders_api_config.png" usemap="#flowMapget_orders_api_config" alt="get_orders_api_config image">
+                <map name="flowMapget_orders_api_config">
+                                                                        </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_get_orders_api_configxml_code">
+                  Show configuration XML code of the flow get:/orders:api-config...
+                </a>
+              </div>
+              <div id="_get_orders_api_configxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="get:/orders:api-config" doc:description="Implementation is in progress &amp;lt;&amp;lt;TBD&amp;gt;&amp;gt;"&gt;
+    &lt;set-payload value="#[NullPayload.getInstance()]" doc:name="Set Payload"/&gt;
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p><p>Implementation is in progress <<TBD>></p>
+</p>
+            </div>
+                                                </section>
+                  <section id="_get_products_api_config">
+            <div class="page-header">
+                <h1>get:/products:api-config <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/get_products_api_config.png" usemap="#flowMapget_products_api_config" alt="get_products_api_config image">
+                <map name="flowMapget_products_api_config">
+                                                                        </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_get_products_api_configxml_code">
+                  Show configuration XML code of the flow get:/products:api-config...
+                </a>
+              </div>
+              <div id="_get_products_api_configxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="get:/products:api-config" doc:description="Implmentation is in progress &amp;lt;&amp;lt;TBD&amp;gt;&amp;gt;"&gt;
+    &lt;set-payload value="#[NullPayload.getInstance()]" doc:name="Set Payload"/&gt;
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p><p>Implmentation is in progress <<TBD>></p>
+</p>
+            </div>
+                                                </section>
+                  <section id="_get_customers_customerId_api_config">
+            <div class="page-header">
+                <h1>get:/customers/{customerId}:api-config <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/get_customers_customerId_api_config.png" usemap="#flowMapget_customers_customerId_api_config" alt="get_customers_customerId_api_config image">
+                <map name="flowMapget_customers_customerId_api_config">
+                                                                                                              </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_get_customers_customerId_api_configxml_code">
+                  Show configuration XML code of the flow get:/customers/{customerId}:api-config...
+                </a>
+              </div>
+              <div id="_get_customers_customerId_api_configxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="get:/customers/{customerId}:api-config" doc:description="This resource wll invoke customer backend service for getting customer records  by first name"&gt;
+    &lt;http:request config-ref="HTTP_Request_Configuration" path="/#[message.inboundProperties.'http.uri.params'.customerId]" method="GET" doc:name="HTTP_GetCustomerRecordByName"&gt;   &lt;/http:request&gt;
+    &lt;set-payload value="#[payload]" mimeType="application/json" doc:name="Set Payload"/&gt;
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p><p>This resource wll invoke customer backend service for getting customer records  by first name</p>
+</p>
+            </div>
+                                                                          </section>
+                  <section id="_get_customers_api_config">
+            <div class="page-header">
+                <h1>get:/customers:api-config <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/get_customers_api_config.png" usemap="#flowMapget_customers_api_config" alt="get_customers_api_config image">
+                <map name="flowMapget_customers_api_config">
+                                                                                                              </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_get_customers_api_configxml_code">
+                  Show configuration XML code of the flow get:/customers:api-config...
+                </a>
+              </div>
+              <div id="_get_customers_api_configxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="get:/customers:api-config" doc:description="This resource wll invoke customer backend service for getting all customer records"&gt;
+    &lt;http:request config-ref="HTTP_Request_Configuration" path="/" method="GET" doc:name="HTTP_GetAllCustomerRecords"&gt;  &lt;/http:request&gt;
+    &lt;set-payload value="#[payload]" mimeType="application/json" doc:name="Set Payload"/&gt;
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p><p>This resource wll invoke customer backend service for getting all customer records</p>
+</p>
+            </div>
+                                                                          </section>
+                  <section id="_post_customers_application_json_api_config">
+            <div class="page-header">
+                <h1>post:/customers:application/json:api-config <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/post_customers_application_json_api_config.png" usemap="#flowMappost_customers_application_json_api_config" alt="post_customers_application_json_api_config image">
+                <map name="flowMappost_customers_application_json_api_config">
+                                                                                                                                                    </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_post_customers_application_json_api_configxml_code">
+                  Show configuration XML code of the flow post:/customers:application/json:api-config...
+                </a>
+              </div>
+              <div id="_post_customers_application_json_api_configxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="post:/customers:application/json:api-config" doc:description="This resource wll invoke customer backend service for inserting a new record"&gt;
+    &lt;http:request config-ref="HTTP_Request_Configuration" path="/" method="POST" doc:name="HTTP_InsertCustomerRecord"&gt;  &lt;/http:request&gt;
+    &lt;set-property propertyName="http.status" value="201" doc:name="Set_HttpStatus"/&gt;
+    &lt;set-payload value="#[payload]" mimeType="application/json" doc:name="Set Payload"/&gt;
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p><p>This resource wll invoke customer backend service for inserting a new record</p>
+</p>
+            </div>
+                                                                                                    </section>
+              </div>
+    </div>
+  </div>
+
+<!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>Designed and built with <a href="http://www.mulesoft.com/mule-studio/" target="_blank">Anypoint Studio</a>.</p>
+        <p>Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>. Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        <p>Icons from <a href="http://glyphicons.com/">Glyphicons Free</a>, licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        <ul class="footer-links">
+          <li><a href="http://blogs.mulesoft.org/">Read the blog</a></li>
+          <li><a href="http://www.mulesoft.org/jira/browse/">Submit issues</a></li>
+        </ul>
+      </div>
+    </footer>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/widgets.js"></script>
+    <script src="assets/jquery.js"></script>
+    <script src="assets/prettify.js"></script>
+    <script src="assets/bootstrap-transition.js"></script>
+    <script src="assets/bootstrap-alert.js"></script>
+    <script src="assets/bootstrap-modal.js"></script>
+    <script src="assets/bootstrap-dropdown.js"></script>
+    <script src="assets/bootstrap-scrollspy.js"></script>
+    <script src="assets/bootstrap-tab.js"></script>
+    <script src="assets/bootstrap-tooltip.js"></script>
+    <script src="assets/bootstrap-popover.js"></script>
+    <script src="assets/bootstrap-button.js"></script>
+    <script src="assets/bootstrap-collapse.js"></script>
+    <script src="assets/bootstrap-carousel.js"></script>
+    <script src="assets/bootstrap-typeahead.js"></script>
+    <script src="assets/bootstrap-affix.js"></script>
+    <script src="assets/scroller.js"></script>
+    <script src="assets/application.js"></script>
+
+</body>
+</html>
