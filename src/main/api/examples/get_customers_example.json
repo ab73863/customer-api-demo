@@ -1,0 +1,17 @@
+[
+{
+	"firstName" :  "Rohini",
+	"lastName" : "Arun Kumar",
+	"addr" :  "Homebush"
+},
+{
+	"firstName" :  "Pranav",
+	"lastName" : "Arun Kumar",
+	"addr" :  "Sydney"
+},
+{
+	"firstName" :  "Arun Kumar",
+	"lastName" : "Balachandran",
+	"addr" :  "Sydney"
+}
+]

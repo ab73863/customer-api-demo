@@ -1,0 +1,88 @@
+#%RAML 1.0
+baseUri: https://au.deloitte.com/exp/customer-service/ # 
+title: Customer Experience API
+version: v1.0
+protocols: [ HTTPS , HTTP]
+types: 
+  customer:
+    type: object
+    properties:
+      firstName?: string
+      lastName: string
+      addr?: string
+  customers:
+    type: array
+    items:
+     type: object
+     properties:
+        firstName?: string
+        lastName: string
+        addr?: string
+traits:
+  secured: !include securitySchemes/accessToken.trait.raml       
+/customers:
+  displayName: Customer details
+  description: This resource holds the CRUD action over customer details
+  get:
+    description: List all <<resourcePathName | !singularize>>
+    queryParameters: 
+      fromTime:
+        description: Provide FROM time in UTC milliseconds
+        type: string
+        example: "1520863813685"
+      toTime:
+        description: Provide TO in UTC milliseconds
+        type: string
+        example: "1520863813685"
+    responses: 
+      200:
+        body:
+          application/json: 
+            type: customers
+            example: !include examples/get_customers_example.json           
+  post:
+    description: Create <<resourcePathName | !singularize>> contact  
+    body:
+      application/json:
+        type: customer
+        example: !include examples/post_customer_example.json
+    responses:
+      201:
+       description: Customer record is created succesfully
+       displayName: Record created
+      409:
+       description: Customer record already exisit
+       displayName: Record conflict                      
+  /{customerId}:          
+    get:
+      description: Return <<resourcePathName | !singularize>> information by customerId 
+      responses:
+        200: 
+          body:
+            application/json:
+              type: customer
+              example: !include examples/get_customer_example.json
+        404:
+          description: Customer record not found
+          displayName: Record Not Found          
+    put:
+      description: Update <<resourcePathName | !singularize>> by customerId  
+      body:
+        application/json:
+          type: customer
+          example: !include examples/put_customer_example.json 
+      responses:
+        204:
+         description: Customer record updated successfully
+         displayName: Records updated
+        400:
+          description: Customer record not found
+          displayName: Record Not Found           
+    delete:
+      description: Delete <<resourcePathName | !singularize>> information by customerId 
+      responses:
+        204:
+         description: Customer record updated successfully
+         displayName: Records updated            
+/orders: !include orders.raml
+/products: !include products.raml  
