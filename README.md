@@ -47,17 +47,17 @@ Note: The experience API is not set with auto-discovery element to act like a pr
 ## Pre-requisites for Demo
 - - - -
 
-###Download the customer experience API flow
+Download the customer experience API flow
 
-![picture alt](https://s3-ap-southeast-2.amazonaws.com/mule-delbucket/exp-customer-api.zip)
+https://s3-ap-southeast-2.amazonaws.com/mule-delbucket/exp-customer-api.zip
 
-###Download the customer backend service flow
+Download the customer backend service flow
 
-![picture alt](https://s3-ap-southeast-2.amazonaws.com/mule-delbucket/CustomerBackendService.zip)
+https://s3-ap-southeast-2.amazonaws.com/mule-delbucket/CustomerBackendService.zip)
 
-###Download postman collection to test the service
+Download postman collection to test the service
 
-![picture alt](https://s3-ap-southeast-2.amazonaws.com/mule-delbucket/CustomerExperienceAPI.postman_collection.json)
+https://s3-ap-southeast-2.amazonaws.com/mule-delbucket/CustomerExperienceAPI.postman_collection.json
 
 ## Running the Demo
 - - - -
