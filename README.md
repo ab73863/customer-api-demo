@@ -1,5 +1,5 @@
 # Customer API Demo
-Markup :  - - - -
+- - - -
 
 The project demonstrates a customer experience API with the resources which allows the following.
 
@@ -12,4 +12,5 @@ PUT			  |	Update a customer
 DELETE		  | Deletes a customer
 
 Use cases and commentary
-Markup :  - - - -
+- - - -
+
